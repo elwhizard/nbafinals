@@ -1,0 +1,27 @@
+{
+  "name": "NBAFinals",
+  "version": "0.0.1",
+  "author": {
+      "name" : "Elluis L. Invento",
+      "email" : "elwhizard@gmail.com",
+      "url" : "javascriptcebu.com"
+  },
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "mongodb": "*",
+    "mongoose": "*",
+    "express": "3.2.6",
+    "jade": "*",
+    "less-middleware": "*",
+    "twit": "*",
+    "socket.io": "*",
+    "cheerio": "*", 
+    "xml2js": "*"
+  }, 
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}

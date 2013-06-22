@@ -1,0 +1,62 @@
+body {
+  padding: 25px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.clear {
+  clear: both;
+}
+.teamStanding {
+  font-size: 16px;
+}
+.teamStanding div {
+  float: left;
+  margin-left: 30px;
+}
+.teamStanding span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.colWrap > div {
+  float: left;
+  margin: 10px 20px;
+}
+.colWrap div.column1 {
+  width: 40%;
+}
+.colWrap div.column2,
+.colWrap div.column3 {
+  width: 25%;
+}
+.tweetsContainer ul.tweets {
+  margin: 0;
+  padding: 0;
+}
+.tweetsContainer ul.tweets li {
+  list-style: none;
+  margin: 3px 0;
+  padding: 8px;
+}
+.tweetsContainer ul.tweets li.tweet {
+  border-bottom: 1px solid #bbb;
+}
+.tweetsContainer ul.tweets li a {
+  text-decoration: none;
+}
+.tweetsContainer ul.tweets li img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.newsContainer ul.news {
+  margin: 0;
+  padding: 0;
+}
+.newsContainer ul.news li {
+  list-style: none;
+  margin: 3px 0;
+}
+.newsContainer ul.news a {
+  text-decoration: none;
+}

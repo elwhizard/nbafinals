@@ -1,0 +1,10 @@
+# IDE #
+###################
+*.ipr
+*.iws
+*.iml
+
+.idea
+_resources
+
+

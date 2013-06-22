@@ -1,0 +1,74 @@
+body {
+  padding: 25px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.clear {
+  clear: both;
+}
+
+.teamStanding {
+  div {
+    float: left;
+    margin-left: 30px;
+  }
+  font-size: 16px;
+  span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.colWrap {
+	> div {
+		float: left;
+		margin: 10px 20px;
+	}
+    div.column1 {
+      width: 40%;
+    }
+    div.column2, div.column3  {
+      width: 25%;
+    }
+}
+
+
+.tweetsContainer {
+  ul.tweets {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 3px 0;
+      padding: 8px;
+      &.tweet {
+        border-bottom: 1px solid #bbb;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        float: left;
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
+.newsContainer {
+  ul.news {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 3px 0;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}

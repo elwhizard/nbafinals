@@ -1,0 +1,44 @@
+extends layout
+
+block content
+	section
+		header
+			h1 NBA Finals #{year}
+			div.teamStanding
+				script(id="finalsTeamTemplate", type="text/template")					
+					div <%= team1_name %>
+						br
+						span <%= team1_alias %>
+					div vs	
+					div <%= team2_name %>
+						br
+						span <%= team2_alias %>
+					div.clear					
+	section
+	div.colWrap
+		div.column1
+			div.currentGame
+				h3 Current Game Score
+				div#currentGameGrid
+			div.teamSchedule
+				h3 Schedule and Standings
+				div#gameSchedulesGrid
+		div.column2
+			h3 Live Tweets - #nbafinals
+			div.tweetsContainer
+				ul.tweets
+					li Loading...
+				script(id="tweetTemplate", type="text/template")
+					<li class="tweet"><img src="<%= imageUrl %>" /> 
+					<span><a href="https://twitter.com/intent/user?screen_name=<%= screen_name %>" target="_blank" ><%= screen_name %></a>: <%= text %></span>
+					<div class="clear"></div>
+					</li>
+		div.column3
+			h3 Latest News
+			div.newsContainer
+				ul.news
+					li Loading...
+				script(id="newsTemplate", type="text/template")
+					<li class="newsItem"><%= source %>:
+					<a href="<%= url %>" target="_blank" ><%= headline %></a>
+					</li>
