@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: nba-finals-2013
+    framework:
+      name: node
+      info:
+        mem: 64M
+        description: Node.js Application
+        exec: 
+    infra: ap-aws
+    url: nba-finals-2013.ap01.aws.af.cm
+    mem: '128'
+    instances: 1
+    services:
+      nbafinals:
+        type: mongodb
